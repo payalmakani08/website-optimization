@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Student Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optimized CSS -->
+    <link rel="stylesheet" href="./style.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header text-center">
+        <h1>My Student Website</h1>
+        <p>A simple website created for learning web optimization</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#home">My Website</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#optimization">Optimization</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="container my-5" id="home">
+        <div class="welcome-box text-center">
+            <h2>Welcome to My Website</h2>
+            <p>
+                This website is created to understand how website
+                performance can be improved using basic techniques.
+            </p>
+            <a href="#about" class="btn btn-primary">Explore More</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="container my-5" id="about">
+        <h2 class="section-title">About This Website</h2>
+
+        <p>
+            A website should load quickly and provide a smooth
+            experience to its visitors. In this project, I have
+            implemented caching, CSS and JavaScript minification,
+            and lazy loading of images.
+        </p>
+    </section>
+
+    <!-- Cards -->
+    <section class="container my-5" id="gallery">
+        <h2 class="section-title">My Learning Gallery</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+                        class="card-img-top"
+                        alt="Computer and coding workspace"
+                        loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">
+                            Learning how websites are designed
+                            using HTML, CSS and Bootstrap.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+                        class="card-img-top"
+                        alt="Laptop used for studying"
+                        loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Technology</h5>
+                        <p class="card-text">
+                            Exploring different technologies
+                            and improving practical knowledge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+                        class="card-img-top"
+                        alt="Online learning setup"
+                        loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Learning</h5>
+                        <p class="card-text">
+                            Practising new concepts through
+                            small projects and experiments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Optimization -->
+    <section class="container my-5" id="optimization">
+        <h2 class="section-title">Website Optimization</h2>
+
+        <div class="row g-3">
+
+            <div class="col-md-4">
+                <div class="info-card">
+                    <h5>Browser Caching</h5>
+                    <p>
+                        A service worker stores important website
+                        files so they can be reused on later visits.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="info-card">
+                    <h5>Minification</h5>
+                    <p>
+                        Unnecessary spaces and line breaks are
+                        removed from CSS and JavaScript files.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="info-card">
+                    <h5>Lazy Loading</h5>
+                    <p>
+                        Images load when they are close to
+                        appearing on the visitor's screen.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+            <p id="status">Checking website optimization...</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>Created for Experiment 11 | Website Optimization</p>
+        <p>HTML | CSS | JavaScript | Bootstrap</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Optimized JavaScript -->
+    <script src="./script.min.js"></script>
+
+</body>
+</html>
